@@ -1,0 +1,143 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'sdGothic';
+    src: local('※'),
+    url("/static/font/sdGothic/AppleSDGothicNeoH.eot"),
+    url("/static/font/sdGothic/AppleSDGothicNeoH.woff2"),
+    url("/static/font/sdGothic/AppleSDGothicNeoH.woff");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sdGothic';
+    src: local('※'),
+    url("/static/font/sdGothic/AppleSDGothicNeoEB.eot"),
+url("/static/font/sdGothic/AppleSDGothicNeoEB.woff2"),
+url("/static/font/sdGothic/AppleSDGothicNeoEB.woff");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sdGothic';
+    src: local('※'),
+    url("/static/font/sdGothic/AppleSDGothicNeoB.eot"),
+url("/static/font/sdGothic/AppleSDGothicNeoB.woff2"),
+url("/static/font/sdGothic/AppleSDGothicNeoB.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sdGothic';
+    src: local('※'),
+    url("/static/font/sdGothic/AppleSDGothicNeoSB.eot"),
+url("/static/font/sdGothic/AppleSDGothicNeoSB.woff2"),
+url("/static/font/sdGothic/AppleSDGothicNeoSB.woff");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sdGothic';
+    src: local('※'),
+    url("/static/font/sdGothic/AppleSDGothicNeoM.eot"),
+url("/static/font/sdGothic/AppleSDGothicNeoM.woff2"),
+url("/static/font/sdGothic/AppleSDGothicNeoM.woff");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sdGothic';
+    src: local('※'),
+    url("/static/font/sdGothic/AppleSDGothicNeoR.eot"),
+url("/static/font/sdGothic/AppleSDGothicNeoR.woff2"),
+url("/static/font/sdGothic/AppleSDGothicNeoR.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sdGothic';
+    src: local('※'),
+    url("/static/font/sdGothic/AppleSDGothicNeoL.eot"),
+url("/static/font/sdGothic/AppleSDGothicNeoL.woff2"),
+url("/static/font/sdGothic/AppleSDGothicNeoL.woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sdGothic';
+    src: local('※'),
+    url("/static/font/sdGothic/AppleSDGothicNeoUL.eot"),
+url("/static/font/sdGothic/AppleSDGothicNeoUL.woff2"),
+url("/static/font/sdGothic/AppleSDGothicNeoUL.woff");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sdGothic';
+    src: local('※'),
+    url("/static/font/sdGothic/AppleSDGothicNeoT.eot"),
+url("/static/font/sdGothic/AppleSDGothicNeoT.woff2"),
+url("/static/font/sdGothic/AppleSDGothicNeoT.woff");
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'notoSans';
+    src: local('※'),
+    url(../font/notosansCJK/NotoSansKR-Black.woff),
+    url(../font/notosansCJK/NotoSansKR-Black.woff2);
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'notoSans';
+    src: local('※'),
+    url(../font/notosansCJK/NotoSansKR-Bold.woff),
+    url(../font/notosansCJK/NotoSansKR-Bold.woff2);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'notoSans';
+    src: local('※'),
+    url(../font/notosansCJK/NotoSansKR-Medium.woff),
+    url(../font/notosansCJK/NotoSansKR-Medium.woff2);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'notoSans';
+    src: local('※'),
+    url(../font/notosansCJK/NotoSansKR-Regular.woff),
+    url(../font/notosansCJK/NotoSansKR-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'notoSans';
+    src: local('※'),
+    url(../font/notosansCJK/NotoSansKR-DemiLight.woff),
+    url(../font/notosansCJK/NotoSansKR-DemiLight.woff2);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'notoSans';
+    src: local('※'),
+    url(../font/notosansCJK/NotoSansKR-Light.woff),
+    url(../font/notosansCJK/NotoSansKR-Light.woff2);
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'notoSans';
+    src: local('※'),
+    url(../font/notosansCJK/NotoSansKR-Thin.woff),
+    url(../font/notosansCJK/NotoSansKR-Thin.woff2);
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+*{font-family:'sdGothic', sans-serif, dotum, gulim;}
+td, div, p, li, dt, dd, input, textarea, select, h1, h2, h3, h4, h5 {font-family:'sdGothic', sans-serif, dotum, gulim; font-weight:400; white-space:normal; line-height:1.2em; color:#111; font-size:16px;}

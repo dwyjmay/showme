@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+html, body {
+  position: relative;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+a:focus {
+  outline: none !important;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+
+video {
+  vertical-align: top;
+}
+
+#wrapper {
+  min-width: 1080px;
+}
+
+#introArea {
+  background-image: url(/static/images/bg_intro.png);
+  background-size: cover;
+}
+#introArea .videoWrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1080px;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+#introArea .videoWrap video {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  object-fit: cover;
+}
+#introArea .dimArea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  left: 0;
+  top: 0;
+}
+#introArea .dimArea .introTextArea {
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+#introArea .dimArea .introTextArea p {
+  border: 2px solid #cf122d;
+  padding: 0 10px;
+  font-weight: 900;
+  color: #cf122d;
+  font-size: 30px;
+  border-radius: 10px;
+}
+#introArea .dimArea .introTextArea p {
+  position: relative;
+}
+#introArea .dimArea .introTextArea p:before {
+  content: "";
+  position: absolute;
+  width: 104%;
+  height: 120%;
+  border-radius: 14px;
+  border: 2px solid #cf122d;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.errorWrap main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+  padding: 0 20px;
+}
+.errorWrap main .content p {
+  margin: 28px 0 120px;
+  text-align: center;
+}
+.errorWrap main .content p strong {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.errorWrap main .content p span {
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=contents.css.map */

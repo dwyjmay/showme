@@ -1,0 +1,49 @@
+$svgCss:no-repeat 0 0 / 100%;
+$white:#fff;
+$gray:#666;
+$mainColor : #cf122d;
+$bgGray:#EBEBE6;
+$headerH : 100px;
+
+@mixin last($target){
+  &:last-of-type{
+    margin-#{$target}:0; padding-#{$target}:0;
+    &::after,&::before{display:none;}
+  }
+}
+
+@mixin flexspaceB(){
+  &{
+    display: flex; justify-content: space-between;
+  }
+}
+
+@mixin content($obj,$standard){//obj:after,before, $standard:부모테그에 relative 를 할지말지 y시 relative생성
+  &{
+    @if($standard==y){
+      position:relative;
+    }@else if($standard==f){
+      position:fixed;
+    }@else{
+      position: absolute;
+    }
+    &:#{$obj}{content:''; position:absolute; @content;}
+  }
+}
+
+@mixin aspect($width, $height) {
+  aspect-ratio: $width / $height;
+  @supports not (aspect-ratio: $width / $height) {
+    &::before {
+      content: '';
+      float: left;
+      padding-top: calc((#{$height} / #{$width}) * 100%);
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+}
