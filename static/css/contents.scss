@@ -24,7 +24,7 @@ video{vertical-align: top;}
 }
 
 #introArea{
-  position:relative; background-image:url(/static/images/bg_intro.png); background-size:100% auto; background-position: 50% 50%;
+  position:relative; background-image:url(../images/bg_intro.png); background-size:100% auto; background-position: 50% 50%;
   .videoWrap{
     position:relative; margin:0 auto; height:100vh; aspect-ratio: 1; overflow: hidden;
     video{position: absolute; height: 100%; left: 50%; top:0; transform: translateX(-50%); object-fit: cover;}
@@ -60,7 +60,7 @@ video{vertical-align: top;}
   @keyframes phraseanim {
     0%{stroke-dashoffset: 442}
     100%{stroke-dashoffset: 0}
-    
+
   }
   &.active{
     .dimArea .introTextArea{
@@ -157,7 +157,7 @@ section{
           + li{margin-top:40px;}
           @for $i from 1 through 10 {
             &:nth-of-type(#{$i}) {
-              background-image: url("/static/images/img_project0#{$i}.png")
+              background-image: url("../images/img_project0#{$i}.png")
             }
           }
         }

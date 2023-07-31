@@ -56,7 +56,7 @@ video {
 
 #introArea {
   position: relative;
-  background-image: url(/static/images/bg_intro.png);
+  background-image: url(../images/bg_intro.png);
   background-size: 100% auto;
   background-position: 50% 50%;
 }
@@ -350,34 +350,34 @@ section .subText {
   margin-top: 40px;
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(1) {
-  background-image: url("/static/images/img_project01.png");
+  background-image: url("../images/img_project01.png");
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(2) {
-  background-image: url("/static/images/img_project02.png");
+  background-image: url("../images/img_project02.png");
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(3) {
-  background-image: url("/static/images/img_project03.png");
+  background-image: url("../images/img_project03.png");
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(4) {
-  background-image: url("/static/images/img_project04.png");
+  background-image: url("../images/img_project04.png");
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(5) {
-  background-image: url("/static/images/img_project05.png");
+  background-image: url("../images/img_project05.png");
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(6) {
-  background-image: url("/static/images/img_project06.png");
+  background-image: url("../images/img_project06.png");
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(7) {
-  background-image: url("/static/images/img_project07.png");
+  background-image: url("../images/img_project07.png");
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(8) {
-  background-image: url("/static/images/img_project08.png");
+  background-image: url("../images/img_project08.png");
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(9) {
-  background-image: url("/static/images/img_project09.png");
+  background-image: url("../images/img_project09.png");
 }
 #workArea .innerLayout ol.listType > li:nth-of-type(10) {
-  background-image: url("/static/images/img_project010.png");
+  background-image: url("../images/img_project010.png");
 }
 #workArea .innerLayout ol.gridType {
   display: grid;
