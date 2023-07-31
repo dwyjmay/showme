@@ -43,7 +43,7 @@
             <ul>
                 <li>
                     <span class="countElement" data-calcDate="2616">0</span>일
-                    <div>퍼블리셔의 꿈을 갖은 지</div>
+                    <div>퍼블리셔의 꿈을 가진 지</div>
                 </li>
                 <li>
                     <span class="countElement" data-calcDate="1148">0</span>일
@@ -419,6 +419,18 @@
         backgroundSize:'120% auto',
     })
 
+    gsap.to('.countElement',{
+        scrollTrigger:{
+            trigger:'.countElement',
+            start:'top 80%',
+            onEnter:()=>{
+                $('.countElement').each(function(){
+                    countUp(this,$(this).attr('data-calcDate'));
+                })
+            }
+        }
+    })
+
     let targets = gsap.utils.toArray($("#abilityArea .itemArea ul li"));
     targets.forEach((item)=>{
         gsap.to(item,{
@@ -452,27 +464,30 @@
     $(function(){
         /*console.log(document.querySelector('svg rect').getTotalLength());*/
         document.querySelector('.videoWrap video').addEventListener("loadeddata", ()=> {$('#introArea').addClass('active');});
-        countUp();
 
         $('.category_select_list li').on('click',function(){
-            let spread_target = '.'+$(this).find('div em').attr('class');
-            console.log(spread_target)
-            /*$('.category_spread_area li').hide();
+            let spread_target = $(this).find('div em').attr('class');
+            if(spread_target === 'tag0'){
+                $('.category_spread_area li').show();
+            } else{
+                $('.category_spread_area li').hide();
+                $('.category_spread_area li').each(function(){
 
-            let target_index = $('.category_spread_area li').find(spread_target).parent().parent().index()
-            $('.category_spread_area li').eq()hide();*/
-
+                    if($(this).find('div em').hasClass(spread_target)){
+                        let target_index = $(this).index();
+                        console.log(target_index)
+                        $('.category_spread_area li').eq(target_index).show();
+                    }
+                    ScrollTrigger.refresh();
+                })
+            }
         })
     })
 
-
-    $('.countElement').each(function(){
-        countUp(this,$(this).attr('data-calcDate'));
-    })
     function countUp(obj,targetNum) {
-        let memberNumTxt = targetNum;
+        let maxNum = targetNum;
 
-        $({val: 0}).animate({val: memberNumTxt}, {
+        $({val: 0}).animate({val: maxNum}, {
             duration: 1500,
             step: function () {
                 var num = numberWithCommas(Math.floor(this.val));
