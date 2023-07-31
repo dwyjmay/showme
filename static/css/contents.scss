@@ -1,7 +1,7 @@
 @import 'mixin.scss';
 @import 'svg.scss';
 
-*{margin:0; padding:0; box-sizing: border-box;  word-break: keep-all; word-wrap: break-word;}
+*{margin:0; padding:0; box-sizing: border-box;  word-break: keep-all; word-wrap: break-word; color:#111;}
 html,body{position: relative;}
 a{
   color:#111; text-decoration: none;
@@ -11,6 +11,7 @@ a{
   &:active{ text-decoration:none; }
   &:focus{outline: none !important;}
 }
+img{max-width: 100%;}
 ul,ol{
   li{
     list-style:none;}
@@ -19,7 +20,7 @@ button{background: none; border:0;}
 video{vertical-align: top;}
 
 #wrapper{
-  min-width:1080px;
+  max-width:2000px; min-width:1080px; margin:0 auto;
 }
 
 #introArea{
@@ -33,7 +34,7 @@ video{vertical-align: top;}
     .introTextArea{
       display: flex; height:100%; flex-flow: column; align-items: center; justify-content: center;
       .phraseArea{
-        rect{fill:transparent; stroke:$mainColor; stroke-width:4; stroke-dasharray: 402; stroke-dashoffset :402 ; animation:phraseanim 2s forwards linear;}
+        rect{fill:transparent; stroke:$mainColor; stroke-width:4; stroke-dasharray: 442; stroke-dashoffset :442 ; animation:phraseanim 2s forwards linear;}
       }
       p{
         margin-top:40px; font-size: 70px;
@@ -57,7 +58,7 @@ video{vertical-align: top;}
     }
   }
   @keyframes phraseanim {
-    0%{stroke-dashoffset: 402}
+    0%{stroke-dashoffset: 442}
     100%{stroke-dashoffset: 0}
     
   }
@@ -72,8 +73,101 @@ video{vertical-align: top;}
   }
 }
 
-#section2{
+
+section{
+  position: relative; background:#f3f3f3;
+  &:nth-child(n+2){padding:100px 0;}
+  .innerLayout{max-width: 1400px; margin:0 auto;}
+  h2{display: flex; margin-bottom:30px; justify-content: center; font-size: 50px; font-weight: 800; font-family: 'notoSans', sans-serif;}
+  .subText{margin-bottom:80px; font-size: 24px; font-weight: 600; color:#666; text-align: center;}
+}
+#infoArea{
   position: relative; z-index:2;
+  .numberInfoArea{
+    ul{display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+      li{
+        padding:40px; background: #dde3ea; border-radius: 40px;
+        span{font-size: 50px; font-weight: 900;}
+        div{font-size: 20px; font-weight: 600;}
+      }
+
+    }
+  }
+}
+#abilityArea{
+  .itemArea{
+    ul li{
+      div{
+        display: flex; gap: 0 4px; margin-bottom: 10px;
+        em{
+          padding:2px 4px; font-style: normal; border-radius: 4px; font-size:12px;
+          &.tag0{background: #fff; border:1px solid #aaa;}
+          &.tag1{background: #ffbebe;}
+          &.tag2{background: #dbcac2;}
+          &.tag3{background: #ede8c2;}
+          &.tag4{background: #e3f1cf;}
+          &.tag5{background: #d6e3ff;}
+          &.tag6{background: #dad8fb;}
+          &.tag7{background: #b9b9b9;}
+          &.tag8{background: #f9d5ed;}
+        }
+      }
+    }
+    .category_select_list{
+      display: flex; justify-content: center; gap:0 10px;
+      li:hover{cursor: pointer;}
+    }
+    .category_spread_area{
+      display: grid; grid-template-columns:1fr 1fr 1fr; gap: 40px 20px; padding-bottom:40px;
+      li{
+        display: flex; padding: 40px 0; flex-flow: column; justify-content: center; align-items: center; border:1px solid #dcdbdb; border-radius: 30px; transition:0.3s box-shadow;
+        opacity: 0; transform: translateY(50px);
+        .icon{width:80px; height: 80px;}
+        span{margin-top:20px; font-weight: 500;}
+        &:hover{box-shadow:1px 12px 20px #c5c5c5;}
+      }
+    }
+  }
+}
+
+#workArea{
+  .innerLayout{
+    ol{
+       padding: 0 40px;
+      > li{
+        height:40vh; border-radius: 60px / 70px 0;  background-position: 0 0; background-size: 100% auto; opacity: 0; transform:translateY(50px); transition:0.5s box-shadow; overflow: hidden;
+        &:hover{box-shadow:1px 12px 20px #737373;}
+        /*&:hover{background-position:0 100%;}*/
+        a{ display: flex; height: 100%; align-items: end;
+
+        }
+        .pageInfo{
+           width: 100%; padding: 20px; background:rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+          .title{color:#fff; font-size: 30px; font-weight: 600}
+          ul{
+            li{
+              color:#fff;
+
+            }
+          }
+        }
+      }
+      &.listType{
+        > li{
+          + li{margin-top:40px;}
+          @for $i from 1 through 10 {
+            &:nth-of-type(#{$i}) {
+              background-image: url("/static/images/img_project0#{$i}.png")
+            }
+          }
+        }
+      }
+      &.gridType{
+        display:grid; margin-top:40px; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
+        li{vertical-align: top;}
+      }
+    }
+  }
 }
 
 //에러

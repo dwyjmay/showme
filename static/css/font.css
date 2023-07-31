@@ -83,56 +83,56 @@ url("/static/font/sdGothic/AppleSDGothicNeoT.woff");
 @font-face {
     font-family: 'notoSans';
     src: local('※'),
-    url(../font/notosansCJK/NotoSansKR-Black.woff),
-    url(../font/notosansCJK/NotoSansKR-Black.woff2);
+    url(/static/font/notosansCJK/NotoSansKR-Black.woff),
+    url(/static/font/notosansCJK/NotoSansKR-Black.woff2);
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
     font-family: 'notoSans';
     src: local('※'),
-    url(../font/notosansCJK/NotoSansKR-Bold.woff),
-    url(../font/notosansCJK/NotoSansKR-Bold.woff2);
+    url(/static/font/notosansCJK/NotoSansKR-Bold.woff),
+    url(/static/font/notosansCJK/NotoSansKR-Bold.woff2);
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'notoSans';
     src: local('※'),
-    url(../font/notosansCJK/NotoSansKR-Medium.woff),
-    url(../font/notosansCJK/NotoSansKR-Medium.woff2);
+    url(/static/font/notosansCJK/NotoSansKR-Medium.woff),
+    url(/static/font/notosansCJK/NotoSansKR-Medium.woff2);
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'notoSans';
     src: local('※'),
-    url(../font/notosansCJK/NotoSansKR-Regular.woff),
-    url(../font/notosansCJK/NotoSansKR-Regular.woff2);
+    url(/static/font/notosansCJK/NotoSansKR-Regular.woff),
+    url(/static/font/notosansCJK/NotoSansKR-Regular.woff2);
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'notoSans';
     src: local('※'),
-    url(../font/notosansCJK/NotoSansKR-DemiLight.woff),
-    url(../font/notosansCJK/NotoSansKR-DemiLight.woff2);
+    url(/static/font/notosansCJK/NotoSansKR-DemiLight.woff),
+    url(/static/font/notosansCJK/NotoSansKR-DemiLight.woff2);
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'notoSans';
     src: local('※'),
-    url(../font/notosansCJK/NotoSansKR-Light.woff),
-    url(../font/notosansCJK/NotoSansKR-Light.woff2);
+    url(/static/font/notosansCJK/NotoSansKR-Light.woff),
+    url(/static/font/notosansCJK/NotoSansKR-Light.woff2);
     font-weight: 200;
     font-style: normal;
 }
 @font-face {
     font-family: 'notoSans';
     src: local('※'),
-    url(../font/notosansCJK/NotoSansKR-Thin.woff),
-    url(../font/notosansCJK/NotoSansKR-Thin.woff2);
+    url(/static/font/notosansCJK/NotoSansKR-Thin.woff),
+    url(/static/font/notosansCJK/NotoSansKR-Thin.woff2);
     font-weight: 100;
     font-style: normal;
 }
