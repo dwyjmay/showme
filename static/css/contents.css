@@ -50,7 +50,7 @@ video {
 
 #wrapper {
   max-width: 2000px;
-  min-width: 1080px;
+  min-width: 1280px;
   margin: 0 auto;
 }
 
@@ -231,6 +231,7 @@ section .subText {
 #infoArea .numberInfoArea ul li div {
   font-size: 20px;
   font-weight: 600;
+  margin-top: 20px;
 }
 
 #abilityArea .itemArea ul li div {
@@ -360,6 +361,7 @@ section .subText {
 
 #workArea .innerLayout .listType > li {
   height: 40vh;
+  max-height: 400px;
   border-radius: 60px/70px 0;
   background-position: 0 0;
   background-size: 100% auto;
@@ -372,34 +374,34 @@ section .subText {
   margin-top: 40px;
 }
 #workArea .innerLayout .listType > li:nth-of-type(1) {
-  background-image: url("../images/img_project01.png");
+  background-image: url("../images/img_projectA01.png");
 }
 #workArea .innerLayout .listType > li:nth-of-type(2) {
-  background-image: url("../images/img_project02.png");
+  background-image: url("../images/img_projectA02.png");
 }
 #workArea .innerLayout .listType > li:nth-of-type(3) {
-  background-image: url("../images/img_project03.png");
+  background-image: url("../images/img_projectA03.png");
 }
 #workArea .innerLayout .listType > li:nth-of-type(4) {
-  background-image: url("../images/img_project04.png");
+  background-image: url("../images/img_projectA04.png");
 }
 #workArea .innerLayout .listType > li:nth-of-type(5) {
-  background-image: url("../images/img_project05.png");
+  background-image: url("../images/img_projectA05.png");
 }
 #workArea .innerLayout .listType > li:nth-of-type(6) {
-  background-image: url("../images/img_project06.png");
+  background-image: url("../images/img_projectA06.png");
 }
 #workArea .innerLayout .listType > li:nth-of-type(7) {
-  background-image: url("../images/img_project07.png");
+  background-image: url("../images/img_projectA07.png");
 }
 #workArea .innerLayout .listType > li:nth-of-type(8) {
-  background-image: url("../images/img_project08.png");
+  background-image: url("../images/img_projectA08.png");
 }
 #workArea .innerLayout .listType > li:nth-of-type(9) {
-  background-image: url("../images/img_project09.png");
+  background-image: url("../images/img_projectA09.png");
 }
 #workArea .innerLayout .listType > li:nth-of-type(10) {
-  background-image: url("../images/img_project010.png");
+  background-image: url("../images/img_projectA010.png");
 }
 #workArea .innerLayout .listType > li:hover {
   box-shadow: 1px 12px 20px #737373;
@@ -423,6 +425,9 @@ section .subText {
 #workArea .innerLayout .listType > li .pageInfo ul li {
   color: #fff;
 }
+#workArea .innerLayout .listType > li .pageInfo ul li + li {
+  margin-top: 10px;
+}
 #workArea .innerLayout .link_able {
   display: inline-block;
   width: 40px;
@@ -434,6 +439,9 @@ section .subText {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 60px 40px;
+  /*> li:nth-of-type(3){
+    a{background-image: url("../images/img_projectB04.png");}
+  }*/
 }
 #workArea .innerLayout .gridType > li {
   height: 400px;
@@ -450,7 +458,65 @@ section .subText {
   background-size: 100% auto;
   background-position: center 0;
   transition: 0.5s all;
-  /*img{height: 100%; min-width: 100%; object-fit: cover; object-position: top;}*/
+}
+#workArea .innerLayout .gridType > li .logo {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: 0.3s all;
+  background: #eee no-repeat center center;
+  text-indent: -9999px;
+}
+#workArea .innerLayout .gridType > li .logo.dark {
+  background-color: #3d3d3d;
+}
+#workArea .innerLayout .gridType > li .logo {
+  position: relative;
+}
+#workArea .innerLayout .gridType > li .logo:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: -10px;
+  top: 76%;
+  background: url(../images/ico_arrow.png) no-repeat center center;
+  background-size: 100%;
+  transform: translateX(0) translateY(0) rotate3d(1, 1, 1, 298deg);
+  transition: 0.5s all cubic-bezier(0.02, 1.05, 0.58, 1);
+}
+#workArea .innerLayout .gridType > li .pageInfo {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  padding: 30px 20px 20px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px 0 #ababab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#workArea .innerLayout .gridType > li .pageInfo ul li {
+  text-align: center;
+}
+#workArea .innerLayout .gridType > li .pageInfo ul li + li {
+  margin-top: 6px;
+  color: #6b6b6b;
+}
+#workArea .innerLayout .gridType > li .pageInfo ul li.name {
+  color: #111;
+  font-weight: 600;
+  font-size: 20px;
 }
 #workArea .innerLayout .gridType > li:hover {
   border-radius: 50px 30%;
@@ -459,16 +525,123 @@ section .subText {
   background-size: 110%;
   background-position: center -50px;
 }
-#workArea .innerLayout .gridType > li:nth-of-type(1) a {
-  background-image: url("../images/img_project05.png");
+#workArea .innerLayout .gridType > li:hover .logo:after {
+  transform: translateX(5px) translateY(-5px) rotate3d(1, 1, 1, 309deg);
 }
-#workArea .innerLayout .gridType > li:nth-of-type(2) a {
-  background-image: url("../images/img_project06.png");
+#workArea .innerLayout .gridType > li:nth-of-type(1) a {
+  background-image: url("../images/img_projectB04.jpg");
   background-size: auto 100%;
 }
-#workArea .innerLayout .gridType > li:nth-of-type(2):hover a {
+#workArea .innerLayout .gridType > li:nth-of-type(1):hover a {
   background-size: auto 110%;
   background-position: center;
+}
+#workArea .innerLayout .gridType > li:nth-of-type(1) .logo {
+  background-image: url("../images/img_projectB01_1.png");
+}
+#workArea .innerLayout .gridType > li:nth-of-type(2) a {
+  background-image: url("../images/img_projectB01.png");
+}
+#workArea .innerLayout .gridType > li:nth-of-type(2) .logo {
+  background-image: url("../images/img_projectB01_1.png");
+}
+#workArea .innerLayout .gridType > li:nth-of-type(3) a {
+  background-image: url("../images/img_projectB02.png");
+  background-size: auto 100%;
+}
+#workArea .innerLayout .gridType > li:nth-of-type(3) .logo {
+  background-image: url("../images/img_projectB02_1.jpg");
+}
+#workArea .innerLayout .gridType > li:nth-of-type(3):hover a {
+  background-size: auto 110%;
+  background-position: center;
+}
+#workArea .innerLayout .gridType > li:nth-of-type(4) a {
+  background-image: url("../images/img_projectB05.jpg");
+  background-size: auto 100%;
+}
+#workArea .innerLayout .gridType > li:nth-of-type(4) .logo {
+  background-image: url("../images/img_projectB05_1.png");
+}
+
+#contactArea {
+  padding-bottom: 200px;
+}
+#contactArea .infoArea {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+#contactArea .infoArea ul {
+  display: inline-block;
+}
+#contactArea .infoArea ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+#contactArea .infoArea ul li div {
+  line-height: normal;
+  padding-right: 20px;
+}
+#contactArea .infoArea ul li div span {
+  position: relative;
+  font-size: 60px;
+  color: rgba(191, 191, 191, 0.6);
+  font-weight: 900;
+}
+#contactArea .infoArea ul li div strong {
+  position: absolute;
+  right: 48px;
+  bottom: 0;
+  font-size: 30px;
+  font-weight: 800;
+  opacity: 0;
+  transform: translateY(40px);
+}
+#contactArea .infoArea ul li p {
+  font-weight: 800;
+  font-size: 30px;
+  font-family: "notoSans", sans-serif;
+  color: #3d3d3d;
+  opacity: 0;
+  transform: translateY(40px);
+}
+#contactArea .typingArea {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url("../images/bg_img01.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 80px;
+  font-weight: 900;
+  transition: 0.5s color;
+}
+#contactArea .typingArea #typing {
+  color: rgba(255, 255, 255, 0.4);
+  line-height: normal;
+  transition: 0.5s color;
+}
+#contactArea .typingArea em {
+  font-style: normal;
+}
+#contactArea .typingArea p {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.4);
+}
+#contactArea .typingArea.active {
+  color: #fff;
+  transition: 0.5s color;
+}
+#contactArea .typingArea.active #typing {
+  color: #fff;
+  transition: 0.5s color;
 }
 
 .errorWrap main {
