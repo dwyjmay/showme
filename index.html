@@ -396,6 +396,15 @@
             <p>Experience never gets old. -The Intern(2015) - </p>
         </article>
     </section>
+    <div id="progress">
+        <span id="progress-value">TOP</span>
+    </div>
+    <ul id="progress-list">
+        <li><a href="javascript:;">수치와 노력 사이</a></li>
+        <li><a href="javascript:;">관심분야 및 사용기술</a></li>
+        <li><a href="javascript:;">최근 작업물🥰</a></li>
+        <li><a href="javascript:;">적극적 구직중😲</a></li>
+    </ul>
 </div>
 <script>
     $target = $('#typing');
@@ -598,6 +607,39 @@
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
     }
+
+
+    $(window).on('scroll',function(){
+        let scrollValue = $('html,body').scrollTop() + $(window).height();
+        $('#progress-list li').each(function(){
+            let ind = $(this).index();
+            let getHeight = $('section h2').eq(ind).offset().top + 200;
+            if(scrollValue > getHeight){
+                $('#progress-value').text($('#progress-list li').eq(ind).text())
+            }
+        })
+    })
+    
+    /* scroll Progress */
+    let calcScrollValue = ()=>{
+        let scrollProgress = document.getElementById('progress');
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight - document.querySelector('.typingArea').clientHeight;
+        let scrollValue = Math.round((pos * 100 )/ calcHeight)
+
+        if((0 <= pos && pos < 100) || (pos >calcHeight)) {
+            scrollProgress.style.display="none";
+        } else{
+            scrollProgress.style.display="grid";
+        }
+
+        scrollProgress.style.background=`conic-gradient(#CF122D ${scrollValue}%, #fff ${scrollValue}%)`
+    }
+    window.onscroll=calcScrollValue;
+    window.onload = calcScrollValue;
+
+
+
 </script>
 </body>
 </html>

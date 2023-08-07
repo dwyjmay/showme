@@ -653,6 +653,51 @@ section .subText {
   transition: 0.5s color;
 }
 
+#progress {
+  display: none;
+  place-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 48px;
+  width: 140px;
+  background-color: #cf122d;
+  z-index: 2;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  animation: bounce 1s forwards infinite cubic-bezier(0.58, 0.28, 0.27, 0.71);
+}
+
+#progress-value {
+  display: block;
+  display: grid;
+  place-items: center;
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
+  background-color: #fff;
+  border-radius: 25px;
+  font-size: 13px;
+  color: #111;
+  letter-spacing: -0.4px;
+  font-weight: 900;
+}
+
+#progress-list {
+  display: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .errorWrap main {
   display: flex;
   justify-content: center;
