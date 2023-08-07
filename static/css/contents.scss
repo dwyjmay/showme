@@ -203,24 +203,24 @@ section{
         }
 
       }
-      > li:nth-of-type(1){
+      /*> li:nth-of-type(1){
         a{background-image: url("../images/img_projectB04.jpg"); background-size: auto 100%;}
         &:hover a{background-size:auto 110%; background-position:center;}
         .logo{background-image: url("../images/img_projectB01_1.png");}
-      }
-      > li:nth-of-type(2){
+      }*/
+      > li:nth-of-type(1){
         a{background-image: url("../images/img_projectB01.png");}
         .logo{background-image: url("../images/img_projectB01_1.png");}
       }
-      > li:nth-of-type(3){
+      > li:nth-of-type(2){
         a{background-image: url("../images/img_projectB02.png"); background-size: auto 100%;}
         .logo{background-image: url("../images/img_projectB02_1.jpg");}
         &:hover a{background-size:auto 110%; background-position:center;}
       }
-      > li:nth-of-type(4){
+      /*> li:nth-of-type(4){
         a{background-image: url("../images/img_projectB05.jpg");  background-size: auto 100%;}
         .logo{background-image: url("../images/img_projectB05_1.png");}
-      }
+      }*/
       /*> li:nth-of-type(3){
         a{background-image: url("../images/img_projectB04.png");}
       }*/
