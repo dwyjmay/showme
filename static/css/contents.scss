@@ -224,7 +224,13 @@ section{
       /*> li:nth-of-type(3){
         a{background-image: url("../images/img_projectB04.png");}
       }*/
+      .more{
+        box-shadow: none; display: flex; justify-content: center; align-items: center;
+        a{height: auto; line-height: normal;}
+        &:hover{border-radius: 30% 50px;}
+      }
     }
+    #btn_more{color:#111; font-size: 40px; font-weight: 800;}
   }
 }
 
