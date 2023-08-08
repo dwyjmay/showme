@@ -234,97 +234,97 @@ section .subText {
   margin-top: 20px;
 }
 
-#abilityArea .itemArea ul li div {
+#skillArea .itemArea ul li div {
   display: flex;
   gap: 0 4px;
   margin-bottom: 10px;
 }
-#abilityArea .itemArea ul li div em {
+#skillArea .itemArea ul li div em {
   padding: 2px 4px;
   font-style: normal;
   border-radius: 4px;
   font-size: 12px;
 }
-#abilityArea .itemArea ul li div em.tag0 {
+#skillArea .itemArea ul li div em.tag0 {
   background: #fff;
   border: 1px solid #aaa;
 }
-#abilityArea .itemArea ul li div em.tag1 {
+#skillArea .itemArea ul li div em.tag1 {
   background: #ffbebe;
 }
-#abilityArea .itemArea ul li div em.tag2 {
+#skillArea .itemArea ul li div em.tag2 {
   background: #dbcac2;
 }
-#abilityArea .itemArea ul li div em.tag3 {
+#skillArea .itemArea ul li div em.tag3 {
   background: #ede8c2;
 }
-#abilityArea .itemArea ul li div em.tag4 {
+#skillArea .itemArea ul li div em.tag4 {
   background: #e3f1cf;
 }
-#abilityArea .itemArea ul li div em.tag5 {
+#skillArea .itemArea ul li div em.tag5 {
   background: #d6e3ff;
 }
-#abilityArea .itemArea ul li div em.tag6 {
+#skillArea .itemArea ul li div em.tag6 {
   background: #dad8fb;
 }
-#abilityArea .itemArea ul li div em.tag7 {
+#skillArea .itemArea ul li div em.tag7 {
   background: #b9b9b9;
 }
-#abilityArea .itemArea ul li div em.tag8 {
+#skillArea .itemArea ul li div em.tag8 {
   background: #f9d5ed;
 }
-#abilityArea .itemArea .category_select_list {
+#skillArea .itemArea .category_select_list {
   display: flex;
   justify-content: center;
   gap: 0 10px;
 }
-#abilityArea .itemArea .category_select_list li div em {
+#skillArea .itemArea .category_select_list li div em {
   transform: translateY(-4px);
   animation-name: wave;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
-#abilityArea .itemArea .category_select_list li:nth-of-type(1) div em {
+#skillArea .itemArea .category_select_list li:nth-of-type(1) div em {
   animation-delay: 0.08s;
 }
-#abilityArea .itemArea .category_select_list li:nth-of-type(2) div em {
+#skillArea .itemArea .category_select_list li:nth-of-type(2) div em {
   animation-delay: 0.16s;
 }
-#abilityArea .itemArea .category_select_list li:nth-of-type(3) div em {
+#skillArea .itemArea .category_select_list li:nth-of-type(3) div em {
   animation-delay: 0.24s;
 }
-#abilityArea .itemArea .category_select_list li:nth-of-type(4) div em {
+#skillArea .itemArea .category_select_list li:nth-of-type(4) div em {
   animation-delay: 0.32s;
 }
-#abilityArea .itemArea .category_select_list li:nth-of-type(5) div em {
+#skillArea .itemArea .category_select_list li:nth-of-type(5) div em {
   animation-delay: 0.4s;
 }
-#abilityArea .itemArea .category_select_list li:nth-of-type(6) div em {
+#skillArea .itemArea .category_select_list li:nth-of-type(6) div em {
   animation-delay: 0.48s;
 }
-#abilityArea .itemArea .category_select_list li:nth-of-type(7) div em {
+#skillArea .itemArea .category_select_list li:nth-of-type(7) div em {
   animation-delay: 0.56s;
 }
-#abilityArea .itemArea .category_select_list li:nth-of-type(8) div em {
+#skillArea .itemArea .category_select_list li:nth-of-type(8) div em {
   animation-delay: 0.64s;
 }
-#abilityArea .itemArea .category_select_list li:nth-of-type(9) div em {
+#skillArea .itemArea .category_select_list li:nth-of-type(9) div em {
   animation-delay: 0.72s;
 }
-#abilityArea .itemArea .category_select_list li:hover {
+#skillArea .itemArea .category_select_list li:hover {
   cursor: pointer;
 }
-#abilityArea .itemArea .category_select_list li:hover em {
+#skillArea .itemArea .category_select_list li:hover em {
   animation-play-state: paused;
 }
-#abilityArea .itemArea .category_spread_area {
+#skillArea .itemArea .category_spread_area {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px 20px;
   padding-bottom: 40px;
 }
-#abilityArea .itemArea .category_spread_area li {
+#skillArea .itemArea .category_spread_area li {
   display: flex;
   padding: 40px 0;
   flex-flow: column;
@@ -336,15 +336,15 @@ section .subText {
   opacity: 0;
   transform: translateY(50px);
 }
-#abilityArea .itemArea .category_spread_area li .icon {
+#skillArea .itemArea .category_spread_area li .icon {
   width: 80px;
   height: 80px;
 }
-#abilityArea .itemArea .category_spread_area li span {
+#skillArea .itemArea .category_spread_area li span {
   margin-top: 20px;
   font-weight: 500;
 }
-#abilityArea .itemArea .category_spread_area li:hover {
+#skillArea .itemArea .category_spread_area li:hover {
   box-shadow: 1px 12px 20px #c5c5c5;
 }
 @keyframes wave {
