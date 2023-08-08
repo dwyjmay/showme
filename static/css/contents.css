@@ -687,6 +687,67 @@ section .subText {
   display: none;
 }
 
+.bgLayer {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+.bgLayer article {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  min-width: 600px;
+  right: 0;
+  top: 0;
+  padding: 50px 20px;
+  background: #111;
+}
+.bgLayer article h5 {
+  color: #b9b9b9;
+  font-size: 18px;
+}
+.bgLayer article h5 ~ div {
+  padding: 20px 10px 80px;
+}
+.bgLayer article h5 ~ div ul li {
+  color: #fff;
+  line-height: 1.6;
+}
+.bgLayer article h5 ~ div ul li + li {
+  margin-top: 6px;
+}
+.bgLayer article span.highlight_text {
+  color: #fff;
+  z-index: 1;
+}
+.bgLayer article span.highlight_text {
+  position: relative;
+}
+.bgLayer article span.highlight_text:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.5em;
+  bottom: 0;
+  left: 0;
+  background: #cf122d;
+  z-index: -1;
+}
+.bgLayer article a {
+  color: #fff;
+}
+.bgLayer.on {
+  visibility: visible;
+  opacity: 1;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);

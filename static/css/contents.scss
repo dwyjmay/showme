@@ -268,6 +268,28 @@ section{
 #progress{display:none; place-items: center; position: fixed; bottom:20px; right:10px; height:48px; width: 140px; background-color: $mainColor; z-index: 2;border-radius: 30px;box-shadow: 0 0 10px rgba(0,0,0,0.2); cursor:pointer; animation: bounce 1s forwards infinite cubic-bezier(0.58, 0.28, 0.27, 0.71);}
 #progress-value{display: block; display: grid; place-items: center; height: calc(100% - 4px); width: calc(100% - 4px);background-color:#fff; border-radius: 25px; font-size: 13px;color:#111; letter-spacing: -0.4px; font-weight:900;}
 #progress-list{display:none;}
+.bgLayer{
+  visibility:hidden; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background:rgba(0,0,0,0.8); z-index: 5; opacity: 0; transition: 0.3s opacity;
+  article{
+    position: absolute; width:40%; height: 100%; min-width:600px; right: 0; top: 0; padding: 50px 20px; background:#111;
+    h5{
+      color:#b9b9b9; font-size: 18px;
+      ~ div{
+        padding: 20px 10px 80px;
+        ul li{
+          color:#fff; line-height: 1.6;
+          + li{margin-top:6px;}
+        }
+      }
+    }
+    span.highlight_text{
+      color:#fff; z-index: 1;
+      @include content(before,y){width: 100%; height: 0.5em; bottom: 0; left: 0; background:$mainColor; z-index: -1;}
+    }
+    a{color:#fff;}
+  }
+  &.on{visibility: visible; opacity: 1;}
+}
 
 @keyframes bounce {
   0%{transform:translateY(0);}
@@ -275,8 +297,6 @@ section{
   100%{transform:translateY(0);}
 
 }
-
-
 
 //에러
 .errorWrap{
