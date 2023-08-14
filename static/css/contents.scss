@@ -330,6 +330,7 @@ section{
         &:hover{box-shadow: none;}
         justify-content: flex-start; border:0;
         div em{font-size: 12px;}
+        span{font-size: 13px;}
       }
     }
     .category_select_list{flex-wrap: wrap;}
@@ -352,7 +353,7 @@ section{
     }
   }
   #contactArea .infoArea ul li p{font-size: 6vw; font-weight: 600;}
-  #contactArea .infoArea ul li:last-child p{font-size: 14px;}
+  #contactArea .infoArea ul li:last-child p{font-size: 16px;}
   #contactArea .typingArea {font-size: 10vw; height:30vh; background-size:auto 100%; background-position: center;}
   .bgLayer{
     article{min-width: unset; width:80%; right:-100%; transition: 0.5s all;}

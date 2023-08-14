@@ -827,6 +827,9 @@ section .subText {
   #skillArea .itemArea .category_spread_area li div em {
     font-size: 12px;
   }
+  #skillArea .itemArea .category_spread_area li span {
+    font-size: 13px;
+  }
   #skillArea .itemArea .category_select_list {
     flex-wrap: wrap;
   }
@@ -873,7 +876,7 @@ section .subText {
     font-weight: 600;
   }
   #contactArea .infoArea ul li:last-child p {
-    font-size: 14px;
+    font-size: 16px;
   }
   #contactArea .typingArea {
     font-size: 10vw;
