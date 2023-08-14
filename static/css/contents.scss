@@ -312,7 +312,7 @@ section{
 }
 
 @media (orientation: landscape) {
-  #workArea .innerLayout .listType > li{height: calc(100vh - 100px);}
+  #workArea .innerLayout .listType > li{height: calc(100vh - 10px);}
   #workArea .innerLayout .gridType > li{height:50vh;}
 }
 
