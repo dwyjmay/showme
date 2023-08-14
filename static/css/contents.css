@@ -411,6 +411,7 @@ section .subText {
   align-items: end;
 }
 #workArea .innerLayout .listType > li .pageInfo {
+  position: relative;
   width: 100%;
   padding: 20px;
   background: rgba(0, 0, 0, 0.6);
@@ -835,6 +836,12 @@ section .subText {
   }
   #skillArea .itemArea ul li div em {
     font-size: 16px;
+  }
+  #workArea .innerLayout .listType > li {
+    background-size: cover;
+  }
+  #workArea .innerLayout .listType > li .pageInfo {
+    backdrop-filter: none;
   }
   #workArea .innerLayout .listType > li .pageInfo .title {
     font-size: 9vw;

@@ -163,7 +163,7 @@ section{
         &:hover{box-shadow:1px 12px 20px #737373;}
         a{ display: flex; height: 100%; align-items: end;}
         .pageInfo{
-           width: 100%; padding: 20px; background:rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+           position:relative; width: 100%; padding: 20px; background:rgba(0,0,0,0.6); backdrop-filter: blur(4px);
           .title{color:#fff; font-size: 50px; font-weight: 600}
           ul{
             li{
@@ -336,7 +336,11 @@ section{
     .category_select_list{flex-wrap: wrap;}
     ul li div em{font-size: 16px;}
   }
-  #workArea .innerLayout .listType > li .pageInfo .title{font-size: 9vw;}
+  #workArea .innerLayout .listType > li{background-size:cover;}
+  #workArea .innerLayout .listType > li .pageInfo{
+    backdrop-filter: none;
+    .title{font-size: 9vw;}
+  }
   #workArea .innerLayout .link_able{vertical-align: bottom;}
   #workArea .innerLayout .gridType{
     grid-template-columns: 1fr;
