@@ -414,7 +414,7 @@ section .subText {
   position: relative;
   width: 100%;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6); /* backdrop-filter: blur(4px);*/
+  background: rgba(0, 0, 0, 0.6);
 }
 #workArea .innerLayout .listType > li .pageInfo .title {
   color: #fff;
@@ -507,7 +507,6 @@ section .subText {
   left: 0;
   padding: 30px 20px 20px;
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(4px);
   box-shadow: 0 0 10px 0 #ababab;
   display: flex;
   flex-direction: column;
