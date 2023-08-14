@@ -327,6 +327,7 @@ section{
     .category_spread_area{
       grid-template-columns: 1fr 1fr;
       li{
+        &:hover{box-shadow: none;}
         justify-content: flex-start; border:0;
         div em{font-size: 12px;}
       }

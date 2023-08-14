@@ -821,6 +821,9 @@ section .subText {
     justify-content: flex-start;
     border: 0;
   }
+  #skillArea .itemArea .category_spread_area li:hover {
+    box-shadow: none;
+  }
   #skillArea .itemArea .category_spread_area li div em {
     font-size: 12px;
   }
