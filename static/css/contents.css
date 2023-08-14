@@ -855,9 +855,6 @@ section .subText {
     border-radius: 0;
     text-align: center;
   }
-  #contactArea {
-    padding-bottom: 0;
-  }
   #contactArea .infoArea {
     padding-bottom: 100px;
   }
