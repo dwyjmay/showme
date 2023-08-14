@@ -187,7 +187,7 @@ section {
   background: #f3f3f3;
 }
 section:nth-child(n+2) {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 section .innerLayout {
   max-width: 1400px;
@@ -625,6 +625,7 @@ section .subText {
   background-image: url("../images/bg_img01.jpg");
   background-size: cover;
   background-attachment: fixed;
+  margin: 0 -20px;
   color: rgba(255, 255, 255, 0.4);
   font-size: 80px;
   font-weight: 900;
@@ -855,7 +856,6 @@ section .subText {
     font-size: 14px;
   }
   #contactArea .typingArea {
-    margin: 0 -20px;
     font-size: 10vw;
     height: 30vh;
     background-size: auto 100%;
