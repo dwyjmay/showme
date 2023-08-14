@@ -20,7 +20,7 @@ button{background: none; border:0;}
 video{vertical-align: top;}
 
 #wrapper{
-  max-width:2000px; /*min-width:1280px;*/ margin:0 auto;
+  width:100%; max-width:2000px; /*min-width:1280px;*/ margin:0 auto; min-height: 100vh;
 }
 
 #introArea{
@@ -252,7 +252,7 @@ section{
     }
   }
   .typingArea{
-    display: flex; position:relative; justify-content: center; align-items: center; height: 500px; background-image: url("../images/bg_img01.jpg"); background-size:cover;/* background-attachment: fixed; */margin:0 -20px;
+    display: flex; position:relative; justify-content: center; align-items: center; height: 500px; background-image: url("../images/bg_img01.jpg"); background-size:cover; background-attachment: fixed; margin:0 -20px;
     color:rgb(255 255 255 /40%); font-size: 80px; font-weight: 900; transition: 0.5s color;
     #typing{color:rgb(255 255 255 /40%); line-height: normal; transition: 0.5s color;}
     em{font-style: normal;}

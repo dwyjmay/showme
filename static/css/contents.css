@@ -49,8 +49,10 @@ video {
 }
 
 #wrapper {
+  width: 100%;
   max-width: 2000px; /*min-width:1280px;*/
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 #introArea {
@@ -622,7 +624,8 @@ section .subText {
   align-items: center;
   height: 500px;
   background-image: url("../images/bg_img01.jpg");
-  background-size: cover; /* background-attachment: fixed; */
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0 -20px;
   color: rgba(255, 255, 255, 0.4);
   font-size: 80px;
