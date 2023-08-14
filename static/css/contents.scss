@@ -311,6 +311,11 @@ section{
   }
 }
 
+@media (orientation: landscape) {
+  #workArea .innerLayout .listType > li{height: calc(100vh - 100px);}
+  #workArea .innerLayout .gridType > li{height:50vh;}
+}
+
 @media all and (max-width:480px) {
   section h2{text-align: center;}
   section:nth-child(n+2){padding:50px 20px;}
