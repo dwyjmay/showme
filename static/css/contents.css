@@ -414,8 +414,7 @@ section .subText {
   position: relative;
   width: 100%;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.6); /* backdrop-filter: blur(4px);*/
 }
 #workArea .innerLayout .listType > li .pageInfo .title {
   color: #fff;

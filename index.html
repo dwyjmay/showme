@@ -554,7 +554,7 @@
         })
     })
 
-    let workTargets = gsap.utils.toArray($("#workArea ol.listType li"));
+    let workTargets = gsap.utils.toArray($("#workArea ol.listType > li"));
     workTargets.forEach((item)=>{
         gsap.to(item,{
             scrollTrigger : {
