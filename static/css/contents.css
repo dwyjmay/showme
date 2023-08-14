@@ -361,6 +361,7 @@ section .subText {
 }
 
 #workArea .innerLayout .listType > li {
+  position: relative;
   height: 40vh;
   max-height: 400px;
   border-radius: 60px/70px 0;
@@ -417,6 +418,7 @@ section .subText {
   width: 100%;
   padding: 20px;
   background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
 }
 #workArea .innerLayout .listType > li .pageInfo .title {
   color: #fff;
@@ -839,9 +841,6 @@ section .subText {
   }
   #workArea .innerLayout .listType > li {
     background-size: cover;
-  }
-  #workArea .innerLayout .listType > li .pageInfo {
-    backdrop-filter: none;
   }
   #workArea .innerLayout .listType > li .pageInfo .title {
     font-size: 9vw;
