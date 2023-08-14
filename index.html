@@ -667,6 +667,7 @@
         }
         scrollProgress.addEventListener('click',()=>{
             document.querySelector('.bgLayer').classList.add('on');
+            scrollDisable();
         })
 
         scrollProgress.style.background=`conic-gradient(#CF122D ${scrollValue}%, #fff ${scrollValue}%)`
@@ -677,10 +678,15 @@
     $('html').click(function(e) {
         if($(e.target).hasClass('bgLayer')){
             document.querySelector('.bgLayer').classList.remove('on');
+            scrollAble();
         }
     });
-
-
+    function scrollDisable(){
+        $('html').css({'overflow':'hidden','height':'100%'});
+    }
+    function scrollAble(){
+        $('html').removeAttr('style')
+    }
 </script>
 </body>
 </html>

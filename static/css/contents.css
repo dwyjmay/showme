@@ -49,8 +49,7 @@ video {
 }
 
 #wrapper {
-  max-width: 2000px;
-  min-width: 1280px;
+  max-width: 2000px; /*min-width:1280px;*/
   margin: 0 auto;
 }
 
@@ -588,6 +587,7 @@ section .subText {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 #contactArea .infoArea ul li div {
   line-height: normal;
@@ -641,7 +641,9 @@ section .subText {
 #contactArea .typingArea p {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 0;
+  text-align: right;
+  padding: 0 20px;
   color: rgba(255, 255, 255, 0.4);
 }
 #contactArea .typingArea.active {
@@ -777,6 +779,98 @@ section .subText {
 }
 .errorWrap main .content p span {
   font-size: 13px;
+}
+
+@media all and (max-width: 480px) {
+  section h2 {
+    text-align: center;
+  }
+  section:nth-child(n+2) {
+    padding: 50px 20px;
+  }
+  #introArea.active .dimArea .introTextArea .fadeEffect1_1 {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+  #infoArea .numberInfoArea ul {
+    grid-template-columns: 1fr;
+  }
+  #skillArea .itemArea .category_spread_area {
+    grid-template-columns: 1fr 1fr;
+  }
+  #skillArea .itemArea .category_spread_area li {
+    justify-content: flex-start;
+    border: 0;
+  }
+  #skillArea .itemArea .category_spread_area li div em {
+    font-size: 12px;
+  }
+  #skillArea .itemArea .category_select_list {
+    flex-wrap: wrap;
+  }
+  #skillArea .itemArea ul li div em {
+    font-size: 16px;
+  }
+  #workArea .innerLayout .listType > li .pageInfo .title {
+    font-size: 9vw;
+  }
+  #workArea .innerLayout .link_able {
+    vertical-align: bottom;
+  }
+  #workArea .innerLayout .gridType {
+    grid-template-columns: 1fr;
+  }
+  #workArea .innerLayout .gridType li.more {
+    height: auto;
+    border-radius: 0;
+    text-align: center;
+  }
+  #contactArea {
+    padding-bottom: 0;
+  }
+  #contactArea .infoArea {
+    padding-bottom: 100px;
+  }
+  #contactArea .infoArea ul {
+    width: 100%;
+  }
+  #contactArea .infoArea ul li div {
+    padding-right: 5px;
+  }
+  #contactArea .infoArea ul li div span {
+    font-size: 9vw;
+  }
+  #contactArea .infoArea ul li div strong {
+    font-size: 6vw;
+    font-weight: 900;
+    right: 10%;
+    bottom: -16%;
+  }
+  #contactArea .infoArea ul li p {
+    font-size: 6vw;
+    font-weight: 600;
+  }
+  #contactArea .infoArea ul li:last-child p {
+    font-size: 14px;
+  }
+  #contactArea .typingArea {
+    margin: 0 -20px;
+    font-size: 10vw;
+    height: 30vh;
+    background-size: auto 100%;
+    background-position: center;
+  }
+  .bgLayer article {
+    min-width: unset;
+    width: 80%;
+    overflow-y: auto;
+    right: -100%;
+    transition: 0.5s all;
+  }
+  .bgLayer.on article {
+    right: 0;
+  }
 }
 
 /*# sourceMappingURL=contents.css.map */
