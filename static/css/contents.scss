@@ -157,7 +157,7 @@ section{
         + li{margin-top:40px;}
         @for $i from 1 through 10 {
           &:nth-of-type(#{$i}) {
-            background-image: url("../images/img_projectA0#{$i}.png")
+            background-image: url("../images/img_projectA0#{$i}.jpg")
           }
         }
         &:hover{box-shadow:1px 12px 20px #737373;}
@@ -209,11 +209,11 @@ section{
         .logo{background-image: url("../images/img_projectB01_1.png");}
       }*/
       > li:nth-of-type(1){
-        a{background-image: url("../images/img_projectB01.png");}
+        a{background-image: url("../images/img_projectB01.jpg");}
         .logo{background-image: url("../images/img_projectB01_1.png");}
       }
       > li:nth-of-type(2){
-        a{background-image: url("../images/img_projectB02.png"); background-size: auto 100%;}
+        a{background-image: url("../images/img_projectB02.jpg"); background-size: auto 100%;}
         .logo{background-image: url("../images/img_projectB02_1.jpg");}
         &:hover a{background-size:auto 110%; background-position:center;}
       }

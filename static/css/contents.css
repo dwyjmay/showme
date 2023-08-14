@@ -373,34 +373,34 @@ section .subText {
   margin-top: 40px;
 }
 #workArea .innerLayout .listType > li:nth-of-type(1) {
-  background-image: url("../images/img_projectA01.png");
+  background-image: url("../images/img_projectA01.jpg");
 }
 #workArea .innerLayout .listType > li:nth-of-type(2) {
-  background-image: url("../images/img_projectA02.png");
+  background-image: url("../images/img_projectA02.jpg");
 }
 #workArea .innerLayout .listType > li:nth-of-type(3) {
-  background-image: url("../images/img_projectA03.png");
+  background-image: url("../images/img_projectA03.jpg");
 }
 #workArea .innerLayout .listType > li:nth-of-type(4) {
-  background-image: url("../images/img_projectA04.png");
+  background-image: url("../images/img_projectA04.jpg");
 }
 #workArea .innerLayout .listType > li:nth-of-type(5) {
-  background-image: url("../images/img_projectA05.png");
+  background-image: url("../images/img_projectA05.jpg");
 }
 #workArea .innerLayout .listType > li:nth-of-type(6) {
-  background-image: url("../images/img_projectA06.png");
+  background-image: url("../images/img_projectA06.jpg");
 }
 #workArea .innerLayout .listType > li:nth-of-type(7) {
-  background-image: url("../images/img_projectA07.png");
+  background-image: url("../images/img_projectA07.jpg");
 }
 #workArea .innerLayout .listType > li:nth-of-type(8) {
-  background-image: url("../images/img_projectA08.png");
+  background-image: url("../images/img_projectA08.jpg");
 }
 #workArea .innerLayout .listType > li:nth-of-type(9) {
-  background-image: url("../images/img_projectA09.png");
+  background-image: url("../images/img_projectA09.jpg");
 }
 #workArea .innerLayout .listType > li:nth-of-type(10) {
-  background-image: url("../images/img_projectA010.png");
+  background-image: url("../images/img_projectA010.jpg");
 }
 #workArea .innerLayout .listType > li:hover {
   box-shadow: 1px 12px 20px #737373;
@@ -537,13 +537,13 @@ section .subText {
   transform: translateX(5px) translateY(-5px) rotate3d(1, 1, 1, 309deg);
 }
 #workArea .innerLayout .gridType > li:nth-of-type(1) a {
-  background-image: url("../images/img_projectB01.png");
+  background-image: url("../images/img_projectB01.jpg");
 }
 #workArea .innerLayout .gridType > li:nth-of-type(1) .logo {
   background-image: url("../images/img_projectB01_1.png");
 }
 #workArea .innerLayout .gridType > li:nth-of-type(2) a {
-  background-image: url("../images/img_projectB02.png");
+  background-image: url("../images/img_projectB02.jpg");
   background-size: auto 100%;
 }
 #workArea .innerLayout .gridType > li:nth-of-type(2) .logo {
@@ -704,13 +704,14 @@ section .subText {
 }
 .bgLayer article {
   position: absolute;
-  width: 40%;
+  width: 70%;
   height: 100%;
-  min-width: 600px;
   right: 0;
   top: 0;
   padding: 50px 20px;
   background: #111;
+  overflow-y: auto;
+  max-width: 600px;
 }
 .bgLayer article h5 {
   color: #b9b9b9;
@@ -782,6 +783,22 @@ section .subText {
   font-size: 13px;
 }
 
+@media (orientation: landscape) {
+  #workArea .innerLayout .listType > li {
+    height: calc(100vh - 10px);
+  }
+  #workArea .innerLayout .gridType > li {
+    height: 50vh;
+  }
+  #progress {
+    height: 50px;
+    width: 160px;
+  }
+  #progress-value {
+    font-size: 16px;
+    border-radius: 30px;
+  }
+}
 @media all and (max-width: 480px) {
   section h2 {
     text-align: center;
@@ -864,7 +881,6 @@ section .subText {
   .bgLayer article {
     min-width: unset;
     width: 80%;
-    overflow-y: auto;
     right: -100%;
     transition: 0.5s all;
   }
