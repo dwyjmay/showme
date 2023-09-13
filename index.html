@@ -355,7 +355,7 @@
                     </a>
                 </li>
                 <li class="more">
-                    <a href="" id="btn_more" onclick="alert('자료 준비중입니다.'); return false;">더 보기</a>
+                    <a href="javascript:;" id="btn_more" onclick="openWorkList();">더 보기</a>
                 </li>
             </ol>
         </div>
@@ -405,7 +405,7 @@
         <li><a href="javascript:;">최근 작업물🥰</a></li>
         <li><a href="javascript:;">적극적 구직중😲</a></li>
     </ul>
-    <div class="bgLayer">
+    <div class="bgLayer summery-wrap">
         <article>
             <h5>ABOUT ME</h5>
             <div>
@@ -437,6 +437,87 @@
         </article>
 
     </div>
+
+    <section class="bgLayer worklist-wrap">
+        <ul class="worklist">
+            <li class="work-typeA">
+                <div>
+                    <em>구축</em>
+                    <div class="title">매일유업 FS 영업플랫폼 구축 서브 (PC)</div>
+                </div>
+                <dl>
+                    <dt>기간</dt>
+                    <dd>2022.11 ~ 2022.12</dd>
+                    <dt>퍼블리싱 기여도</dt>
+                    <dd>40%</dd>
+                    <dt>발주처</dt>
+                    <dd>매일유업</dd>
+                    <dt>관련기술</dt>
+                    <dd>JSP, jQuery, SCSS</dd>
+                </dl>
+            </li>
+            <li class="work-typeA">
+                <div>
+                    <em>구축</em>
+                    <div class="title">디지털컨텐츠 제작관리시스템 제작 및 고도화 (PC)</div>
+                </div>
+                <dl>
+                    <dt>기간</dt>
+                    <dd>2021.09 ~ 2021.12<br>2022.12 ~ 2023.01</dd>
+                    <dt>퍼블리싱 기여도</dt>
+                    <dd>100%</dd>
+                    <dt>발주처</dt>
+                    <dd>LG생활건강</dd>
+                    <dt>관련기술</dt>
+                    <dd>JSP, jQuery</dd>
+                </dl>
+            </li>
+            <li class="work-typeA">
+                <div>
+                    <em>구축</em>
+                    <div class="title">아카이브 용기, 포잘물 사양서 제작 및 고도화 서브(PC)</div>
+                </div>
+                <dl>
+                    <dt>기간</dt>
+                    <dd>2020.08 ~ 2020.09</dd>
+                    <dt>퍼블리싱 기여도</dt>
+                    <dd>30%</dd>
+                    <dt>발주처</dt>
+                    <dd>LG생활건강</dd>
+                    <dt>관련기술</dt>
+                    <dd>JSP, jQuery</dd>
+                </dl>
+            </li>
+            <li class="work-typeB">
+                <div>
+                    <em>유지운영</em>
+                    <div class="title">LG생활건강법인, 베비언스, 오휘, CNP, 페리오 등</div>
+                </div>
+                <dl>
+                    <dt>기간</dt>
+                    <dd>2020.06 ~ 2023.05</dd>
+                    <dt>발주처</dt>
+                    <dd>LG생활건강</dd>
+                    <dt>관련기술</dt>
+                    <dd>JSP, jQuery</dd>
+                </dl>
+            </li>
+            <li class="work-typeB">
+                <div>
+                    <em>유지운영</em>
+                    <div class="title">한독협회</div>
+                </div>
+                <dl>
+                    <dt>기간</dt>
+                    <dd>2020.06 ~ 2023.03</dd>
+                    <dt>발주처</dt>
+                    <dd>한독협회</dd>
+                    <dt>관련기술</dt>
+                    <dd>JSP, jQuery</dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
 </div>
 <script>
     $target = $('#typing');
@@ -600,6 +681,12 @@
         })
     })
 
+    function openWorkList(){
+        $('.worklist').scrollTop(0);
+        $('.worklist-wrap').addClass('on');
+        scrollDisable();
+    }
+
     $(function(){
         /*console.log(document.querySelector('svg rect').getTotalLength());*/
         document.querySelector('.videoWrap video').addEventListener("loadeddata", ()=> {$('#introArea').addClass('active');});
@@ -667,7 +754,7 @@
             scrollProgress.style.display="grid";
         }
         scrollProgress.addEventListener('click',()=>{
-            document.querySelector('.bgLayer').classList.add('on');
+            document.querySelector('.summery-wrap').classList.add('on');
             scrollDisable();
         })
 
@@ -678,7 +765,7 @@
 
     $('html').click(function(e) {
         if($(e.target).hasClass('bgLayer')){
-            document.querySelector('.bgLayer').classList.remove('on');
+            document.querySelector('.bgLayer.on').classList.remove('on');
             scrollAble();
         }
     });

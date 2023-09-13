@@ -291,6 +291,41 @@ section{
   &.on{visibility: visible; opacity: 1;}
 }
 
+.worklist-wrap{
+  .worklist{
+    width:100%; height: 80vh; max-width: 400px; margin:0 auto; overflow-y: auto; padding:30px 20px;
+    background:#fff; border-radius: 20px;
+    -ms-overflow-style:none;                    /*ie에서 스크롤바 감춤*/
+    &::-webkit-scrollbar{display:none!important;    /*크롬 등*/}
+    li{
+      border-bottom: 1px dashed #eee;
+       em{display:inline-block; padding: 4px 6px; font-size: 16px; font-style: normal; border-radius: 8px;}
+       > div {
+         display: flex; align-items: center; gap:0 10px;
+       }
+      &.work-typeA{
+        em{background: #111; color:#fff; border:1px solid #111;}
+      }
+      &.work-typeB{
+        em{background: #fff; color:#111; border:1px solid #111;}
+      }
+      dl{
+        padding: 20px 0; flex-wrap: wrap; gap: 6px 0;
+        dt{
+          display:inline-block; position: relative; z-index: 1; padding:0 6px 0 4px; margin-bottom: 4px;
+            @include content(before,y){width: 100%; height: 0.5em; bottom: 0; left: 0; background:#e7e0e1; z-index: -1; border-radius: 8px;}
+        }
+        dd{
+          margin:-15px 0 10px; font-size: 18px; font-weight: 500; text-align: right;
+          @include last(bottom)
+        }
+      }
+      + li {margin-top:20px; }
+      &:last-of-type{border-bottom: 0;}
+    }
+  }
+}
+
 @keyframes bounce {
   0%{transform:translateY(0);}
   50%{transform:translateY(-10%);}
@@ -298,18 +333,7 @@ section{
 
 }
 
-//에러
-.errorWrap{
-  main{
-    display:flex; justify-content:center; align-items: center; height: calc(100vh - 50px); padding:0 20px;
-    .content{
-      p{margin:28px 0 120px; text-align: center;
-        strong{font-size: 18px; font-weight: 600; margin-bottom: 10px;}
-        span{font-size: 13px;}
-      }
-    }
-  }
-}
+
 
 @media (orientation: landscape) {
   #workArea .innerLayout .listType > li{height: calc(100vh - 10px);}
@@ -321,11 +345,17 @@ section{
   #workArea .innerLayout .listType#operate{
     grid-template-columns: 1fr 1fr;
     > li .pageInfo{padding-top:60px;}
+    .more{
+      grid-column-start: 1; grid-column-end: 3;
+    }
   }
 }
 @media all and (max-width:600px) {
   #workArea .innerLayout .listType#operate{
     grid-template-columns: 1fr;
+    .more{
+      grid-column-start: 1; grid-column-end: 2;
+    }
   }
 }
 
