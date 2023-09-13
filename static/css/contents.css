@@ -375,36 +375,6 @@ section .subText {
 #workArea .innerLayout .listType > li + li {
   margin-top: 40px;
 }
-#workArea .innerLayout .listType > li:nth-of-type(1) {
-  background-image: url("../images/img_projectA01.jpg");
-}
-#workArea .innerLayout .listType > li:nth-of-type(2) {
-  background-image: url("../images/img_projectA02.jpg");
-}
-#workArea .innerLayout .listType > li:nth-of-type(3) {
-  background-image: url("../images/img_projectA03.jpg");
-}
-#workArea .innerLayout .listType > li:nth-of-type(4) {
-  background-image: url("../images/img_projectA04.jpg");
-}
-#workArea .innerLayout .listType > li:nth-of-type(5) {
-  background-image: url("../images/img_projectA05.jpg");
-}
-#workArea .innerLayout .listType > li:nth-of-type(6) {
-  background-image: url("../images/img_projectA06.jpg");
-}
-#workArea .innerLayout .listType > li:nth-of-type(7) {
-  background-image: url("../images/img_projectA07.jpg");
-}
-#workArea .innerLayout .listType > li:nth-of-type(8) {
-  background-image: url("../images/img_projectA08.jpg");
-}
-#workArea .innerLayout .listType > li:nth-of-type(9) {
-  background-image: url("../images/img_projectA09.jpg");
-}
-#workArea .innerLayout .listType > li:nth-of-type(10) {
-  background-image: url("../images/img_projectA010.jpg");
-}
 #workArea .innerLayout .listType > li:hover {
   box-shadow: 1px 12px 20px #737373;
 }
@@ -431,38 +401,58 @@ section .subText {
 #workArea .innerLayout .listType > li .pageInfo ul li + li {
   margin-top: 10px;
 }
-#workArea .innerLayout .link_able {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: url("../images/ico_link.png") no-repeat center center/30px;
+#workArea .innerLayout .listType#establish > li:nth-of-type(1) {
+  background-image: url("../images/img_projectA01.jpg");
 }
-#workArea .innerLayout .gridType {
-  margin-top: 40px;
+#workArea .innerLayout .listType#establish > li:nth-of-type(2) {
+  background-image: url("../images/img_projectA02.jpg");
+}
+#workArea .innerLayout .listType#establish > li:nth-of-type(3) {
+  background-image: url("../images/img_projectA03.jpg");
+}
+#workArea .innerLayout .listType#establish > li:nth-of-type(4) {
+  background-image: url("../images/img_projectA04.jpg");
+}
+#workArea .innerLayout .listType#establish > li:nth-of-type(5) {
+  background-image: url("../images/img_projectA05.jpg");
+}
+#workArea .innerLayout .listType#establish > li:nth-of-type(6) {
+  background-image: url("../images/img_projectA06.jpg");
+}
+#workArea .innerLayout .listType#establish > li:nth-of-type(7) {
+  background-image: url("../images/img_projectA07.jpg");
+}
+#workArea .innerLayout .listType#establish > li:nth-of-type(8) {
+  background-image: url("../images/img_projectA08.jpg");
+}
+#workArea .innerLayout .listType#establish > li:nth-of-type(9) {
+  background-image: url("../images/img_projectA09.jpg");
+}
+#workArea .innerLayout .listType#establish > li:nth-of-type(10) {
+  background-image: url("../images/img_projectA010.jpg");
+}
+#workArea .innerLayout .listType#operate {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 60px 40px;
-  /*> li:nth-of-type(1){
-    a{background-image: url("../images/img_projectB04.jpg"); background-size: auto 100%;}
-    &:hover a{background-size:auto 110%; background-position:center;}
-    .logo{background-image: url("../images/img_projectB01_1.png");}
-  }*/
-  /*> li:nth-of-type(4){
-    a{background-image: url("../images/img_projectB05.jpg");  background-size: auto 100%;}
-    .logo{background-image: url("../images/img_projectB05_1.png");}
-  }*/
-  /*> li:nth-of-type(3){
-    a{background-image: url("../images/img_projectB04.png");}
-  }*/
+  padding-top: 40px;
+  /*        li:nth-of-type(1){
+            a{background-image: url("../images/img_projectB04.jpg"); background-size: auto 100%;}
+            &:hover a{background-size:auto 110%; background-position:center;}
+            .logo{background-image: url("../images/img_projectB01_1.png");}
+          }*/
+  /*li:nth-of-type(4){
+        a{background-image: url("../images/img_projectB05.jpg");  background-size: auto 100%;}
+        .logo{background-image: url("../images/img_projectB05_1.png");}
+      }
+  li:nth-of-type(3){
+        a{background-image: url("../images/img_projectB04.png");}
+      }*/
 }
-#workArea .innerLayout .gridType > li {
-  height: 400px;
-  overflow: hidden;
-  border-radius: 30% 50px;
-  transition: 0.5s all;
-  box-shadow: 1px 6px 17px 0px #e5e5e5;
+#workArea .innerLayout .listType#operate > li + li {
+  margin-top: 0;
 }
-#workArea .innerLayout .gridType > li a {
+#workArea .innerLayout .listType#operate > li a {
   position: relative;
   display: block;
   width: 100%;
@@ -471,7 +461,7 @@ section .subText {
   background-position: center 0;
   transition: 0.5s all;
 }
-#workArea .innerLayout .gridType > li .logo {
+#workArea .innerLayout .listType#operate > li .logo {
   position: absolute;
   width: 80px;
   height: 80px;
@@ -485,13 +475,13 @@ section .subText {
   background: #eee no-repeat center center;
   text-indent: -9999px;
 }
-#workArea .innerLayout .gridType > li .logo.dark {
+#workArea .innerLayout .listType#operate > li .logo.dark {
   background-color: #3d3d3d;
 }
-#workArea .innerLayout .gridType > li .logo {
+#workArea .innerLayout .listType#operate > li .logo {
   position: relative;
 }
-#workArea .innerLayout .gridType > li .logo:after {
+#workArea .innerLayout .listType#operate > li .logo:after {
   content: "";
   position: absolute;
   width: 30px;
@@ -503,7 +493,7 @@ section .subText {
   transform: translateX(0) translateY(0) rotate3d(1, 1, 1, 298deg);
   transition: 0.5s all cubic-bezier(0.02, 1.05, 0.58, 1);
 }
-#workArea .innerLayout .gridType > li .pageInfo {
+#workArea .innerLayout .listType#operate > li .pageInfo {
   position: absolute;
   width: 100%;
   height: 50%;
@@ -517,57 +507,59 @@ section .subText {
   justify-content: center;
   align-items: center;
 }
-#workArea .innerLayout .gridType > li .pageInfo ul li {
+#workArea .innerLayout .listType#operate > li .pageInfo ul li {
   text-align: center;
+  color: #111;
 }
-#workArea .innerLayout .gridType > li .pageInfo ul li + li {
+#workArea .innerLayout .listType#operate > li .pageInfo ul li + li {
   margin-top: 6px;
   color: #6b6b6b;
 }
-#workArea .innerLayout .gridType > li .pageInfo ul li.name {
+#workArea .innerLayout .listType#operate > li .pageInfo ul li.name {
   color: #111;
   font-weight: 600;
   font-size: 20px;
 }
-#workArea .innerLayout .gridType > li:hover {
-  border-radius: 50px 30%;
+#workArea .innerLayout .listType#operate > li:hover a {
+  background-size: 101%;
 }
-#workArea .innerLayout .gridType > li:hover a {
-  background-size: 110%;
-  background-position: center -50px;
-}
-#workArea .innerLayout .gridType > li:hover .logo:after {
+#workArea .innerLayout .listType#operate > li:hover .logo:after {
   transform: translateX(5px) translateY(-5px) rotate3d(1, 1, 1, 309deg);
 }
-#workArea .innerLayout .gridType > li:nth-of-type(1) a {
+#workArea .innerLayout .listType#operate li:nth-of-type(1) a {
   background-image: url("../images/img_projectB01.jpg");
 }
-#workArea .innerLayout .gridType > li:nth-of-type(1) .logo {
+#workArea .innerLayout .listType#operate li:nth-of-type(1) .logo {
   background-image: url("../images/img_projectB01_1.png");
 }
-#workArea .innerLayout .gridType > li:nth-of-type(2) a {
+#workArea .innerLayout .listType#operate li:nth-of-type(2) a {
   background-image: url("../images/img_projectB02.jpg");
   background-size: auto 100%;
 }
-#workArea .innerLayout .gridType > li:nth-of-type(2) .logo {
+#workArea .innerLayout .listType#operate li:nth-of-type(2) .logo {
   background-image: url("../images/img_projectB02_1.jpg");
 }
-#workArea .innerLayout .gridType > li:nth-of-type(2):hover a {
-  background-size: auto 110%;
-  background-position: center;
-}
-#workArea .innerLayout .gridType .more {
+#workArea .innerLayout .listType#operate .more {
+  height: auto;
+  border-radius: 0;
   box-shadow: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
-#workArea .innerLayout .gridType .more a {
+#workArea .innerLayout .listType#operate .more a {
   height: auto;
   line-height: normal;
 }
-#workArea .innerLayout .gridType .more:hover {
+#workArea .innerLayout .listType#operate .more:hover {
   border-radius: 30% 50px;
+}
+#workArea .innerLayout .link_able {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/ico_link.png") no-repeat center center/30px;
 }
 #workArea .innerLayout #btn_more {
   color: #111;
@@ -598,7 +590,7 @@ section .subText {
 }
 #contactArea .infoArea ul li div span {
   position: relative;
-  font-size: 60px;
+  font-size: clamp(20px, 9vw, 60px);
   color: rgba(191, 191, 191, 0.6);
   font-weight: 900;
 }
@@ -613,7 +605,7 @@ section .subText {
 }
 #contactArea .infoArea ul li p {
   font-weight: 800;
-  font-size: 30px;
+  font-size: clamp(14px, 3.5vw, 30px);
   font-family: "notoSans", sans-serif;
   color: #3d3d3d;
   opacity: 0;
@@ -790,9 +782,6 @@ section .subText {
   #workArea .innerLayout .listType > li {
     height: calc(100vh - 10px);
   }
-  #workArea .innerLayout .gridType > li {
-    height: 50vh;
-  }
   #progress {
     height: 50px;
     width: 160px;
@@ -800,6 +789,19 @@ section .subText {
   #progress-value {
     font-size: 16px;
     border-radius: 30px;
+  }
+}
+@media all and (max-width: 1200px) {
+  #workArea .innerLayout .listType#operate {
+    grid-template-columns: 1fr 1fr;
+  }
+  #workArea .innerLayout .listType#operate > li .pageInfo {
+    padding-top: 60px;
+  }
+}
+@media all and (max-width: 600px) {
+  #workArea .innerLayout .listType#operate {
+    grid-template-columns: 1fr;
   }
 }
 @media all and (max-width: 480px) {
@@ -848,14 +850,6 @@ section .subText {
   #workArea .innerLayout .link_able {
     vertical-align: bottom;
   }
-  #workArea .innerLayout .gridType {
-    grid-template-columns: 1fr;
-  }
-  #workArea .innerLayout .gridType li.more {
-    height: auto;
-    border-radius: 0;
-    text-align: center;
-  }
   #contactArea .infoArea {
     padding-bottom: 100px;
   }
@@ -865,9 +859,6 @@ section .subText {
   #contactArea .infoArea ul li div {
     padding-right: 5px;
   }
-  #contactArea .infoArea ul li div span {
-    font-size: 9vw;
-  }
   #contactArea .infoArea ul li div strong {
     font-size: 6vw;
     font-weight: 900;
@@ -875,7 +866,6 @@ section .subText {
     bottom: -16%;
   }
   #contactArea .infoArea ul li p {
-    font-size: 6vw;
     font-weight: 600;
   }
   #contactArea .infoArea ul li:last-child p {
