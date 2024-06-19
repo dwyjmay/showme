@@ -54,6 +54,7 @@ video {
   max-width: 2000px; /*min-width:1280px;*/
   margin: 0 auto;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #introArea {
@@ -118,12 +119,12 @@ video {
   transition: 0.3s all;
 }
 #introArea .dimArea .introTextArea p.on i {
-  transform: scale(0.9);
+  transform: scale(0.8);
   transform-origin: left center;
 }
 #introArea .dimArea .introTextArea p.on span {
   color: #cf122d;
-  transform: scale(1.2) translateX(-8%);
+  transform: scale(1.4) translateX(-14%);
   transform-origin: left center;
 }
 #introArea .dimArea .introTextArea > span {
@@ -336,7 +337,7 @@ section .subText {
   border-radius: 30px;
   transition: 0.3s box-shadow;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(40px);
 }
 #skillArea .itemArea .category_spread_area li .icon {
   width: 80px;
@@ -348,6 +349,11 @@ section .subText {
 }
 #skillArea .itemArea .category_spread_area li:hover {
   box-shadow: 1px 12px 20px #c5c5c5;
+}
+#skillArea .itemArea .category_spread_area li.active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.4s all ease-in-out;
 }
 @keyframes wave {
   0% {
@@ -402,35 +408,23 @@ section .subText {
 #workArea .innerLayout .listType > li .pageInfo ul li + li {
   margin-top: 10px;
 }
-#workArea .innerLayout .listType#establish > li:nth-of-type(1) {
+#workArea .innerLayout .listType#establish > li#beanpole {
   background-image: url("../images/img_projectA01.jpg");
 }
-#workArea .innerLayout .listType#establish > li:nth-of-type(2) {
+#workArea .innerLayout .listType#establish > li#akPlaza {
   background-image: url("../images/img_projectA02.jpg");
 }
-#workArea .innerLayout .listType#establish > li:nth-of-type(3) {
+#workArea .innerLayout .listType#establish > li#akMembers {
   background-image: url("../images/img_projectA03.jpg");
 }
-#workArea .innerLayout .listType#establish > li:nth-of-type(4) {
+#workArea .innerLayout .listType#establish > li#s-oilbonus {
   background-image: url("../images/img_projectA04.jpg");
 }
-#workArea .innerLayout .listType#establish > li:nth-of-type(5) {
+#workArea .innerLayout .listType#establish > li#smart-all {
   background-image: url("../images/img_projectA05.jpg");
 }
-#workArea .innerLayout .listType#establish > li:nth-of-type(6) {
+#workArea .innerLayout .listType#establish > li#maeil-msfood {
   background-image: url("../images/img_projectA06.jpg");
-}
-#workArea .innerLayout .listType#establish > li:nth-of-type(7) {
-  background-image: url("../images/img_projectA07.jpg");
-}
-#workArea .innerLayout .listType#establish > li:nth-of-type(8) {
-  background-image: url("../images/img_projectA08.jpg");
-}
-#workArea .innerLayout .listType#establish > li:nth-of-type(9) {
-  background-image: url("../images/img_projectA09.jpg");
-}
-#workArea .innerLayout .listType#establish > li:nth-of-type(10) {
-  background-image: url("../images/img_projectA010.jpg");
 }
 #workArea .innerLayout .listType#operate {
   display: grid;
