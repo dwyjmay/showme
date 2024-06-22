@@ -119,12 +119,12 @@ video {
   transition: 0.3s all;
 }
 #introArea .dimArea .introTextArea p.on i {
-  transform: scale(0.8);
+  transform: scale(0.9);
   transform-origin: left center;
 }
 #introArea .dimArea .introTextArea p.on span {
   color: #cf122d;
-  transform: scale(1.4) translateX(-14%);
+  transform: scale(1.2) translateX(-8%);
   transform-origin: left center;
 }
 #introArea .dimArea .introTextArea > span {
@@ -425,6 +425,9 @@ section .subText {
 }
 #workArea .innerLayout .listType#establish > li#maeil-msfood {
   background-image: url("../images/img_projectA06.jpg");
+}
+#workArea .innerLayout .listType#establish > li#jinair {
+  background-image: url("../images/img_projectA07.png");
 }
 #workArea .innerLayout .listType#operate {
   display: grid;

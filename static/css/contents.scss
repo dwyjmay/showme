@@ -42,8 +42,8 @@ video{vertical-align: top;}
         i,span{display:inline-block; color:#fff; font-style: normal; font-weight:900; transition:0.3s all;}
         b{color:$mainColor; font-weight: 900; transition:0.3s all;}
         &.on{
-          i{transform:scale(0.8); transform-origin: left center;}
-          span{color:$mainColor;transform:scale(1.4) translateX(-14%); transform-origin: left center;}
+          i{transform:scale(0.9); transform-origin: left center;}
+          span{color:$mainColor;transform:scale(1.2) translateX(-8%); transform-origin: left center;}
         }
       }
       > span{margin-bottom:20px; color:#fff; font-size:20px;}
@@ -183,6 +183,7 @@ section{
           &#s-oilbonus{background-image: url("../images/img_projectA04.jpg")}
           &#smart-all{background-image: url("../images/img_projectA05.jpg")}
           &#maeil-msfood{background-image: url("../images/img_projectA06.jpg")}
+          &#jinair{background-image:url("../images/img_projectA07.png");}
         }
       }
       &#operate{
