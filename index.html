@@ -606,92 +606,6 @@
     $('.numberInfoArea li').eq(0).find('.countElement').attr('data-calcDate',diff)
     $('.numberInfoArea li').eq(1).find('.countElement').attr('data-calcDate',diff2)
 
-    gsap.to("#wrapper", {
-        scrollTrigger: {
-            trigger: "#wrapper",
-            start:"top top",
-            end:'bottom bottom',
-            pin:'#introArea',
-            pinType:'fixed',
-            pinSpacing:false,
-        }
-    })
-    gsap.to("#introArea .introTextArea p", {
-        scrollTrigger: {
-            trigger: "#infoArea",
-            start:"top 95%",
-            end:"top 100%",
-            onEnter:()=>{$('#introArea .introTextArea p').addClass('on');},
-            onEnterBack:()=>{$('#introArea .introTextArea p').removeClass('on');},
-        },
-    })
-    gsap.to('#introArea',{
-        scrollTrigger:{
-            trigger:'#infoArea',
-            start:'top bottom',
-            end:'top top',
-            scrub:1,
-        },
-        backgroundSize:'120% auto',
-    })
-
-    gsap.to('.countElement',{
-        scrollTrigger:{
-            trigger:'.countElement',
-            start:'top 80%',
-            onEnter:()=>{
-                $('.countElement').each(function(){
-                    countUp(this,$(this).attr('data-calcDate'));
-                })
-            }
-        }
-    })
-
-    let workTargets = gsap.utils.toArray($("#workArea ol.listType > li"));
-    workTargets.forEach((item)=>{
-        gsap.to(item,{
-            scrollTrigger : {
-                trigger:item,
-                start : "top 95%",
-                toggleActions:"restart none none reverse",
-            },
-            y:0,
-            opacity:1,
-            duration:0.6,
-            ease: 'Power1.easeInOut',
-        })
-    })
-
-    let infoTargets = gsap.utils.toArray($("#contactArea .infoArea li strong"));
-    infoTargets.forEach((item)=>{
-        gsap.to(item,{
-            scrollTrigger : {
-                trigger:item,
-                start : "top 95%",
-                toggleActions:"restart none none reverse",
-            },
-            y:0,
-            opacity:1,
-            duration:0.6,
-            ease: 'Power1.easeInOut',
-        })
-    })
-    let infoTargets2 = gsap.utils.toArray($("#contactArea .infoArea li p"));
-    infoTargets2.forEach((item)=>{
-        gsap.to(item,{
-            scrollTrigger : {
-                trigger:item,
-                start : "top 95%",
-                toggleActions:"restart none none reverse",
-            },
-            y:0,
-            opacity:1,
-            duration:0.6,
-            delay:0.1,
-            ease: 'Power1.easeInOut',
-        })
-    })
-
     function openWorkList(){
         $('.worklist').scrollTop(0);
         $('.worklist-wrap').addClass('on');
@@ -699,13 +613,101 @@
     }
 
     $(function(){
+
+
+        gsap.to("#wrapper", {
+            scrollTrigger: {
+                trigger: "#wrapper",
+                start:"top top",
+                end:'bottom bottom',
+                pin:'#introArea',
+                pinType:'fixed',
+                pinSpacing:false,
+            }
+        })
+        gsap.to("#introArea .introTextArea p", {
+            scrollTrigger: {
+                trigger: "#infoArea",
+                start:"top 95%",
+                end:"top 100%",
+                onEnter:()=>{$('#introArea .introTextArea p').addClass('on');},
+                onEnterBack:()=>{$('#introArea .introTextArea p').removeClass('on');},
+            },
+        })
+        gsap.to('#introArea',{
+            scrollTrigger:{
+                trigger:'#infoArea',
+                start:'top bottom',
+                end:'top top',
+                scrub:1,
+            },
+            backgroundSize:'120% auto',
+        })
+
+        gsap.to('.countElement',{
+            scrollTrigger:{
+                trigger:'.countElement',
+                start:'top 80%',
+                onEnter:()=>{
+                    $('.countElement').each(function(){
+                        countUp(this,$(this).attr('data-calcDate'));
+                    })
+                }
+            }
+        })
+
+        let workTargets = gsap.utils.toArray($("#workArea ol.listType > li"));
+        workTargets.forEach((item)=>{
+            gsap.to(item,{
+                scrollTrigger : {
+                    trigger:item,
+                    start : "top 95%",
+                    toggleActions:"restart none none reverse",
+                },
+                y:0,
+                opacity:1,
+                duration:0.6,
+                ease: 'Power1.easeInOut',
+            })
+        })
+
+        let infoTargets = gsap.utils.toArray($("#contactArea .infoArea li strong"));
+        infoTargets.forEach((item)=>{
+            gsap.to(item,{
+                scrollTrigger : {
+                    trigger:item,
+                    start : "top 95%",
+                    toggleActions:"restart none none reverse",
+                },
+                y:0,
+                opacity:1,
+                duration:0.6,
+                ease: 'Power1.easeInOut',
+            })
+        })
+        let infoTargets2 = gsap.utils.toArray($("#contactArea .infoArea li p"));
+        infoTargets2.forEach((item)=>{
+            gsap.to(item,{
+                scrollTrigger : {
+                    trigger:item,
+                    start : "top 95%",
+                    toggleActions:"restart none none reverse",
+                },
+                y:0,
+                opacity:1,
+                duration:0.6,
+                delay:0.1,
+                ease: 'Power1.easeInOut',
+            })
+        })
+
+
         /*console.log(document.querySelector('svg rect').getTotalLength());*/
         document.querySelector('.videoWrap video').addEventListener("loadeddata", ()=> {$('#introArea').addClass('active');});
 
         $('.category_select_list li').on('click',function(){
             let spread_target = $(this).find('div em').attr('class');
             if(spread_target === 'tag0'){
-                console.log(0)
                 $('.category_spread_area li').removeClass('active');
                 setTimeout(()=>{
                     $('.category_spread_area li').show().addClass('active');
@@ -715,9 +717,7 @@
                 $('.category_spread_area li').removeClass('active').hide()
                 $('.category_spread_area li').each(function(){
                     if($(this).find('div em').hasClass(spread_target)){
-                        console.log(spread_target)
                         let target_index = $(this).index();
-                        console.log(target_index)
                         $('.category_spread_area li').eq(target_index).show().addClass('active')
 
                     }
