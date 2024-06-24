@@ -790,6 +790,7 @@
     }
     window.onscroll=calcScrollValue;
     window.onload = calcScrollValue;
+    window.resize = ScrollTrigger.refresh();
 
     $('html').click(function(e) {
         if($(e.target).hasClass('bgLayer')){
