@@ -49,6 +49,10 @@ video {
   vertical-align: top;
 }
 
+.pageAnchor {
+  display: block;
+}
+
 #wrapper {
   width: 100%;
   max-width: 2000px; /*min-width:1280px;*/

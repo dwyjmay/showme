@@ -56,8 +56,10 @@
                     <div>퍼블리셔로서 일한 지</div>
                 </li>
                 <li>
-                    <span>5</span>개
-                    <div>구축 프로젝트</div>
+                    <a href="javascript:" class="pageAnchor" onclick="pageScroll('#workArea'); return false;">
+                        <span>5</span>개
+                        <div>구축 프로젝트</div>
+                    </a>
                 </li>
                 <li>
                     <span>2</span>개
@@ -703,17 +705,20 @@
         $('.category_select_list li').on('click',function(){
             let spread_target = $(this).find('div em').attr('class');
             if(spread_target === 'tag0'){
+                console.log(0)
                 $('.category_spread_area li').removeClass('active');
                 setTimeout(()=>{
                     $('.category_spread_area li').show().addClass('active');
                 },50)
 
             } else{
-                $('.category_spread_area li').hide().removeClass('active')
+                $('.category_spread_area li').removeClass('active').hide()
                 $('.category_spread_area li').each(function(){
                     if($(this).find('div em').hasClass(spread_target)){
+                        console.log(spread_target)
                         let target_index = $(this).index();
-                        $('.category_spread_area li').eq(target_index).show().addClass('active');
+                        console.log(target_index)
+                        $('.category_spread_area li').eq(target_index).show().addClass('active')
 
                     }
                 })
@@ -755,9 +760,14 @@
         })
 
         $('.category_spread_area li').each(function(){
-            $(this).offset().top <= scrollValue ? $(this).addClass('active') : $(this).removeClass('active')
+            ($(this).is(':visible') && $(this).offset().top <= scrollValue) ? $(this).addClass('active') : $(this).removeClass('active')
         })
     })
+
+    function pageScroll(target){
+        $('html, body').animate({scrollTop: $(target).offset().top}, 500);
+
+    }
     
     /* scroll Progress */
     let calcScrollValue = ()=>{
