@@ -139,7 +139,7 @@ section{
         display: flex; padding: 40px 0; flex-flow: column; justify-content: center; align-items: center; border:1px solid #dcdbdb; border-radius: 30px; transition:0.3s box-shadow;
         opacity: 0; transform: translateY(40px);
         .icon{width:80px; height: 80px;}
-        span{margin-top:20px; font-weight: 500;}
+        span{display:block; padding: 0 10px; margin-top:20px; font-weight: 500;}
         &:hover{box-shadow:1px 12px 20px #c5c5c5;}
         &.active{
           transform: translateY(0);
@@ -264,7 +264,7 @@ section{
   }
   .typingArea{
     display: flex; position:relative; justify-content: center; align-items: center; height: 500px; background-image: url("../images/bg_img01.jpg"); background-size:cover; background-attachment: fixed; margin:0 -20px; overflow: hidden;
-    color:rgb(255 255 255 /40%); font-size: 80px; font-weight: 900; transition: 0.5s color;
+    color:rgb(255 255 255 /40%); font-size: min(10vw,80px); font-weight: 900; transition: 0.5s color;
     #typing{color:rgb(255 255 255 /40%); line-height: normal; transition: 0.5s color;}
     em{font-style: normal;}
     p{position: absolute; bottom: 10px; right:0; text-align: right; padding:0 20px; color:rgba(255 255 255 /40%);}

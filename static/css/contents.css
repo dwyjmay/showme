@@ -348,6 +348,8 @@ section .subText {
   height: 80px;
 }
 #skillArea .itemArea .category_spread_area li span {
+  display: block;
+  padding: 0 10px;
   margin-top: 20px;
   font-weight: 500;
 }
@@ -625,7 +627,7 @@ section .subText {
   margin: 0 -20px;
   overflow: hidden;
   color: rgba(255, 255, 255, 0.4);
-  font-size: 80px;
+  font-size: min(10vw, 80px);
   font-weight: 900;
   transition: 0.5s color;
 }
