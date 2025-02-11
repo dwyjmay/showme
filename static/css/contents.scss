@@ -138,7 +138,10 @@ section{
       li{
         display: flex; padding: 40px 0; flex-flow: column; justify-content: center; align-items: center; border:1px solid #dcdbdb; border-radius: 30px; transition:0.3s box-shadow;
         opacity: 0; transform: translateY(40px);
-        .icon{width:80px; height: 80px;}
+        .icon{
+          width:80px; height: 80px; text-align: center;
+          img{object-fit: cover; max-height: 100%; }
+        }
         span{display:block; padding: 0 10px; margin-top:20px; font-weight: 500;}
         &:hover{box-shadow:1px 12px 20px #c5c5c5;}
         &.active{
@@ -186,6 +189,7 @@ section{
           &#smart-all{background-image: url("../images/img_projectA05.jpg")}
           &#maeil-msfood{background-image: url("../images/img_projectA06.jpg")}
           &#jinair{background-image:url("../images/img_projectA07.png");}
+          &#maeil{background-image:url("../images/img_projectA08.png");}
         }
       }
       &#operate{
@@ -295,7 +299,7 @@ section{
     }
     span.highlight_text{
       color:#fff; z-index: 1;
-      @include content(before,y){width: 100%; height: 0.5em; bottom: 0; left: 0; background:$mainColor; z-index: -1;}
+      @include content(before,y){width: 100%; height: 0.7em; bottom: 0; left: 0; background:$mainColor; z-index: -1;}
     }
     a{color:#fff;}
   }

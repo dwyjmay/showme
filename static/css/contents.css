@@ -346,6 +346,11 @@ section .subText {
 #skillArea .itemArea .category_spread_area li .icon {
   width: 80px;
   height: 80px;
+  text-align: center;
+}
+#skillArea .itemArea .category_spread_area li .icon img {
+  object-fit: cover;
+  max-height: 100%;
 }
 #skillArea .itemArea .category_spread_area li span {
   display: block;
@@ -434,6 +439,9 @@ section .subText {
 }
 #workArea .innerLayout .listType#establish > li#jinair {
   background-image: url("../images/img_projectA07.png");
+}
+#workArea .innerLayout .listType#establish > li#maeil {
+  background-image: url("../images/img_projectA08.png");
 }
 #workArea .innerLayout .listType#operate {
   display: grid;
@@ -738,7 +746,7 @@ section .subText {
   content: "";
   position: absolute;
   width: 100%;
-  height: 0.5em;
+  height: 0.7em;
   bottom: 0;
   left: 0;
   background: #cf122d;
