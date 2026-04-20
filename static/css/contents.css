@@ -443,6 +443,12 @@ section .subText {
 #workArea .innerLayout .listType#establish > li#maeil {
   background-image: url("../images/img_projectA08.png");
 }
+#workArea .innerLayout .listType#establish > li#kelim {
+  background-image: url("../images/img_projectA09.png");
+}
+#workArea .innerLayout .listType#establish > li#lgLibrary {
+  background-image: url("../images/img_projectA10.png");
+}
 #workArea .innerLayout .listType#operate {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
